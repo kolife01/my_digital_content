@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
+  <style>
+      .flex{
+        display: flex;
+        /* justify-content: flex-end; */
+      }
+      .price{
+        color: #000;
+        font-size: 20px;
+        margin: 0 30px 0 0;
+  
+      }
+      .right{
+        text-align: right;
+      }
+      #output{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: auto;
+      }
+      .card2{
+        margin: 20px;
+      }
+    </style>
+  
+  <title>Document</title>
+</head>
+<body>
+  <a href="/publish.html">home</a>
+  <div id="output">
+      <div class="card2">
+        <div class="ui card" >
+            <a class="image" href="" >
+              <img src="https://ipfs.io/ipfs/QmSddoxRjpuUZTHmL5msc4SvwRAnUeGT67qcBNCjxc3rDT">
+            </a>
+            <div class="content">
+              <a class="header">PCのデスクトップアート</a>
+              <div class="meta">
+                <span class="date">カテゴリー</span>
+              </div>
+              <div class="description">書きました。</div>
+            </div>
+            <div class="extra content"><span class="right floated"> <i class="heart outline like icon"></i> 17 likes </span> <p class="price">㆔0.1</p></div>
+        </div>
+      </div>
+
+      <div class="card2">
+        <div class="ui card" >
+            <a class="image" href="" >
+              <img src="https://ipfs.io/ipfs/QmSddoxRjpuUZTHmL5msc4SvwRAnUeGT67qcBNCjxc3rDT">
+            </a>
+            <div class="content">
+              <a class="header">PCのデスクトップアート</a>
+              <div class="meta">
+                <span class="date">カテゴリー</span>
+              </div>
+              <div class="description">書きました。</div>
+            </div>
+            <div class="extra content"><span class="right floated"> <i class="heart outline like icon"></i> 17 likes </span> <p class="price">㆔0.1</p></div>
+        </div>
+      </div>
+
+    <div class="card2">
+      <div class="ui card" >
+        <a class="image" href="" >
+          <img src="https://ipfs.io/ipfs/QmSddoxRjpuUZTHmL5msc4SvwRAnUeGT67qcBNCjxc3rDT">
+        </a>
+        <div class="content">
+          <a class="header">PCのデスクトップアート</a>
+          <div class="meta">
+            <span class="date">カテゴリー</span>
+          </div>
+          <div class="description">書きました。</div>
+        </div>
+        <div class="extra content"><span class="right floated"> <i class="heart outline like icon"></i> 17 likes </span> <p class="price">㆔0.1</p></div>
+      </div>
+    </div>
+</div>
+
+<!-- <input type="button"value="JSONファイルを取得する" onclick="getJSON(text3)"> -->
+<button id="show">表示</button>
+<button id="test">test</button>
+
+<input type="buffer" value="firebaseにセット" onclick="setimg()">
+
+
+<script src="./js/web3.min.js"></script>
+<script src="./js/contract_abi.js"></script>
+<script src="./js/buffer.js"></script>
+<script src="./js/ipfs.js"></script>
+<!-- <script type="module" src="./js/script.js"></script> -->
+<script src="./js/script.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCDTnpUg1Y_K62UWQB4NoNUPRhTiCJIE_Q",
+    authDomain: "copyright-a7939.firebaseapp.com",
+    databaseURL: "https://copyright-a7939.firebaseio.com",
+    projectId: "copyright-a7939",
+    storageBucket: "",
+    messagingSenderId: "791144596466"
+  };
+  firebase.initializeApp(config);
+</script>
+    
+<script>
+
+// var img = document.getElementById('e_img');
+// var room = "001";
+
+// function setimg(){
+//     console.log(2)
+//     var storageRef = firebase.storage().ref(room).child("1.png");
+//     putstringあたりがエラーの原因か
+//     storageRef.putString(img.src, 'data_url', {contentType:'image/png'});
+// }
+
+</script>
+</body>
+</html>

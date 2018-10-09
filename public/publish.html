@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="semantic/dist/semantic.min.js"></script>
+  
+  <style>
+
+
+      
+  </style>
+  <title>MyDigitalContent</title>
+</head>
+<body>
+    <header id="luxbar" class="luxbar-fixed">
+        <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
+        <div class="luxbar-menu luxbar-menu-right luxbar-menu-dark">
+            <ul class="luxbar-navigation">
+                <li class="luxbar-header">
+                    <a href="/index.html" class="luxbar-brand">MyDigitalContent</a>
+                    <label class="luxbar-hamburger luxbar-hamburger-doublespin" 
+                    id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
+                </li>
+                <li class="luxbar-item"><a href="/publish.html">Publish</a></li>
+                <li class="luxbar-item"><a href="https://rinkeby.opensea.io/category/mydigitalcontent">Market</a></li>
+                <li class="luxbar-item"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+        
+    <!-- <div class="ui inverted menu">
+        <a class="active item" href="/index.html">Home </a>
+        <a class="item" href="/publish.html">出品 </a>
+        <a class="item" href="https://rinkeby.opensea.io/category/mycopyright">マーケット</a>
+        <a class="item" href="/market.html">マーケット2</a>
+    </div> -->
+
+<div class="main_wrap">
+    <div class="ui segment ">
+            <div class="ui active inverted dimmer">
+                <div class="ui text loader">Load</div>
+            </div>
+        <div class="wrap">
+            <form class="ui form">
+                <div class="field">
+                    <label>Image</label>
+                    <!-- imgアップしたら表示させる -->
+                    <div class="">
+                        <label for="publish" class="file" >
+                            <div class="image_box"><i class="fas fa-camera img_text"></i></div>
+                            <input type="file" id="publish" />
+                        </label>
+                    </div>
+                    
+                </div>
+
+                <div class="field">
+                    <label>Title</label>
+                    <input type="text" name="name" id="e_name" placeholder="">
+                </div>
+                <div class="field">
+                    <label>Description</label>
+                    <textarea id="e_desc"name="desc"></textarea>
+                </div>
+                <div class="field">
+                    <div class="ui checkbox">
+                    <input type="checkbox" tabindex="0" >
+                    <label>I agree to the terms of service</label>
+                    </div>
+                </div>
+                
+                <!-- <button class="ui blue button" type="submit">出品する</button> -->
+                <div id="confirm" class="fluid ui blue button">Publish</div>
+                <br>
+                <div class="fluid ui grey button">back</div>
+            </form>
+        </div>
+    </div>
+</div>
+    
+            
+
+    <div id="dev" style="display: none;">
+        <p id="message"></p>
+        <p><a src="" id="link">ipfs_image</a></p>
+        <p><a src="" id="link2">ipfs_uri</a></p>
+        <p><a src="" id="link3">https://ipfs.io/ipfs/Qmdc3gRYPqVNDVqkjcWk8qjjuX6duhxaggZU8DQcYXwpEW</a></p>
+    </div>
+
+
+    
+<!-- MyCopyright -->
+<script src="./js/web3.min.js"></script>
+<script src="./js/contract_abi.js"></script>
+<script src="./js/buffer.js"></script>
+<script src="./js/ipfs.js"></script>
+<script src="./js/script.js"></script>
+
+
+
+<script>
+
+</script>
+  
+</body>
+</html>
