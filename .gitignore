@@ -5,3 +5,4 @@ memo
 *.env
 node_modules
 semantic
+package-lock.json
